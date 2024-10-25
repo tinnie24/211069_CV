@@ -1,0 +1,225 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 193, 193);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header */
+.header {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #cc7a7a; /* Dark blue color */
+    text-transform: uppercase;
+}
+
+.profile-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Profile Image */
+.imgBx {
+    width: 100px; /* Set specific width */
+    height: 100px; /* Set specific height */
+    overflow: hidden; /* Ensure image stays within bounds */
+    border-radius: 8px; /* Rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.imgBx img {
+    width: 100%; /* Make image fit container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Content Area */
+.content {
+    flex: 1; /* Allow content to grow */
+}
+
+/* Section Styles */
+h2 {
+    color: #333;
+    margin-top: 20px; /* Spacing above headings */
+}
+
+.section {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.skills, .languages {
+    margin: 10px 0; /* Margin for skills and languages sections */
+}
+
+/* Skill Bar Styles */
+.skill-bar {
+    background-color: #f1f1f1; /* Background for skill bars */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for progress */
+    height: 20px; /* Height of skill bars */
+    margin-bottom: 10px; /* Space between bars */
+}
+
+.progress {
+    background-color: #4caf50; /* Green color for progress */
+    height: 100%; /* Fill the bar */
+    text-align: center; /* Center text */
+    line-height: 20px; /* Center text vertically */
+    color: white; /* Text color */
+}
+
+/* Contact Info Styles */
+.contact-info {
+    margin-bottom: 20px; /* Space below contact info */
+}
+
+/* List Styles */
+.achievements ul, .extracurricular ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.skills ul, .languages ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+/* Achievements, Skills, and Extracurricular */
+.skills ul, .achievements ul, .extracurricular ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.skills li, .achievements li, .extracurricular li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Reference Styles */
+.references {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.references div {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stack profile and content vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .imgBx {
+        width: 80px; /* Smaller size for mobile */
+        height: 80px; /* Smaller size for mobile */
+    }
+
+    .imgBx img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skills ul, .achievements ul, .extracurricular ul, .languages ul {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+    }
+
+    .references {
+        grid-template-columns: 1fr; /* Stack reference items in a single column */
+    }
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #f39c12;
+}
+
+footer i {
+    margin: 5px;
+    color: #3498db;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer i:hover {
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .page-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .left-column, .right-column {
+        flex: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-section img {
+        width: 30%;
+    }
+    .profile-section h2 {
+        font-size: 1.5rem;
+    }
+    .profile-section h3, .profile-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body, html {
+        font-size: 0.9rem;
+    }
+    .profile-section img {
+        width: 40%;
+    }
+    .profile-section h2 {
+        font-size: 1.4rem;
+    }
+    .profile-section p {
+        font-size: 0.9rem;
+    }
+    footer p, footer i {
+        font-size: 0.9rem;
+    }
+}
