@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizen Access Control System to Subsidized Items in Malaysia using QR Code</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #0b1a33;
+      color: #f1f1f1;
+      font-family: "Segoe UI", sans-serif;
+    }
+    h1, h2, h3 {
+      color: #4da6ff;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #001f4d, #003366);
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+    .hero h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    .card {
+      background-color: #13294b;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="w3-content w3-padding">
+
+    <!-- HERO HEADER -->
+    <div class="hero">
+      <h1><i class="fa-solid fa-qrcode"></i> Citizen Access Control System</h1>
+      <h3>Ensuring Fair Distribution of Subsidized Items in Malaysia</h3>
+      <p><b>Final Year Project (2025)</b></p>
+    </div>
+
+    <!-- Objectives -->
+    <div class="card">
+      <h2><i class="fa-solid fa-bullseye"></i> Objectives</h2>
+      <ul>
+        <li>Implement a <b>QR code–based verification system</b> for subsidy eligibility.</li>
+        <li>Provide <b>secure data storage</b> using encryption mechanisms (Fernet AES).</li>
+        <li>Develop <b>user and admin dashboards</b> for subsidy management.</li>
+        <li>Evaluate <b>QR scanning performance</b> with GM65/GM67 barcode scanners.</li>
+      </ul>
+    </div>
+
+    <!-- Technologies -->
+    <div class="card">
+      <h2><i class="fa-solid fa-gears"></i> Technologies & Tools</h2>
+      <div class="w3-row-padding">
+        <div class="w3-half">
+          <ul>
+            <li>Python (Flask Framework)</li>
+            <li>MySQL Database (XAMPP)</li>
+            <li>QR Code Generator & Scanner (GM65 / GM67)</li>
+          </ul>
+        </div>
+        <div class="w3-half">
+          <ul>
+            <li>Encryption: <b>Fernet (AES)</b></li>
+            <li>Grafana + Prometheus (Performance monitoring)</li>
+            <li>Raspberry Pi (System integration)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Methodology -->
+    <div class="card">
+      <h2><i class="fa-solid fa-diagram-project"></i> Methodology</h2>
+      <p>The project followed a structured approach combining <b>software engineering</b> and <b>system integration</b> steps:</p>
+      <ol>
+        <li>Design system architecture for QR-based access control.</li>
+        <li>Develop Flask-based web dashboards (User & Admin).</li>
+        <li>Integrate GM65/GM67 scanners with Raspberry Pi.</li>
+        <li>Implement encryption for user identity protection.</li>
+        <li>Test & evaluate scanning performance using Grafana dashboards.</li>
+      </ol>
+    </div>
+
+    <!-- Results -->
+    <div class="card">
+      <h2><i class="fa-solid fa-chart-line"></i> Results & Findings</h2>
+      <div class="w3-row-padding gallery">
+        <div class="w3-half w3-center">
+          <img src="../images/qr_scan.jpg" alt="QR Code Scanning">
+          <p><b>Figure 1:</b> Successful QR code scan and user verification.</p>
+        </div>
+        <div class="w3-half w3-center">
+          <img src="../images/admin_dashboard.jpg" alt="Admin Dashboard">
+          <p><b>Figure 2:</b> Admin dashboard showing eligibility check.</p>
+        </div>
+      </div>
+      <div class="w3-row-padding gallery w3-margin-top">
+        <div class="w3-half w3-center">
+          <img src="../images/user_dashboard.jpg" alt="User Dashboard">
+          <p><b>Figure 3:</b> User dashboard with QR code and transaction log.</p>
+        </div>
+        <div class="w3-half w3-center">
+          <img src="../images/grafana_chart.jpg" alt="Grafana Performance">
+          <p><b>Figure 4:</b> Grafana visualization of scan performance metrics.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Impact -->
+    <div class="card">
+      <h2><i class="fa-solid fa-handshake-angle"></i> Impact</h2>
+      <p>
+        This project contributes to <b>social equity</b> by ensuring subsidies reach the intended recipients, 
+        while reducing financial leakage and misuse. It also aligns with <b>Malaysia’s digital transformation initiatives</b> 
+        (MyDigital & JENDELA) and minimizes environmental impact by eliminating paper-based verification.
+      </p>
+    </div>
+
+    <!-- Back Button -->
+    <a href="../index.html" class="w3-button w3-blue w3-round-large w3-margin-top">⬅ Back to Resume</a>
+
+  </div>
+</body>
+</html>
