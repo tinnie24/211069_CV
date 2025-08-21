@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Recognition for User Authentication (Engineering Algorithms)</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <div class="w3-content w3-padding">
+    <h1>Face Recognition for User Authentication (Engineering Algorithms)</h1>
+    <p>
+      This project, developed under the <b>ECC3122 - Engineering Algorithms</b> course, 
+      focused on building a <b>real-time face recognition system</b> for secure and efficient user authentication. 
+      It integrates <b>machine learning models</b> with algorithms such as <b>Timsort</b> and 
+      <b>Linear Search</b> to manage student records and authentication effectively.
+    </p>
+
+    <h3>🔧 Technologies & Tools</h3>
+    <ul>
+      <li>Python (OpenCV, Roboflow integration)</li>
+      <li>Teachable Machine for dataset collection</li>
+      <li>Roboflow for annotation & training</li>
+      <li>Algorithms: Timsort (sorting), Linear Search (searching)</li>
+    </ul>
+
+    <h3>🎯 Objectives</h3>
+    <ul>
+      <li>Ensure real-time authentication and response.</li>
+      <li>Sort student records alphabetically and by detection order.</li>
+      <li>Enable searching of student names from the dataset.</li>
+    </ul>
+
+    <!-- Algorithm Section -->
+    <h3>⚙️ Algorithms Applied</h3>
+    <div class="w3-panel w3-light-grey w3-round-large w3-padding">
+      <p><b>🌀 Timsort (Sorting)</b><br>
+      Timsort is a hybrid algorithm that combines merge sort and insertion sort, 
+      with a time complexity of <b>O(n log n)</b>. It was used to sort the list of student names 
+      both <b>alphabetically</b> and by <b>detection order</b>, ensuring quick lookups and 
+      efficient record management.</p>
+
+      <p><b>🔍 Linear Search (Searching)</b><br>
+      Linear search was used to check whether a student's name exists in the dataset 
+      or in the detected list. With a time complexity of <b>O(n)</b>, it is efficient enough 
+      for our small dataset of 24 students, making it simple and effective for real-time use.</p>
+    </div>
+
+    <h3>📊 Results & Findings</h3>
+    <div class="w3-responsive">
+      <table class="w3-table-all w3-hoverable w3-small w3-bordered">
+        <thead>
+          <tr class="w3-black">
+            <th>No.</th>
+            <th>Figure</th>
+            <th>Option</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Figure 2</td><td>Login</td><td>System login screen for user authentication.</td></tr>
+          <tr><td>2</td><td>Figure 3</td><td>Option 1</td><td>Search for a student name in the main menu.</td></tr>
+          <tr><td>3</td><td>Figure 4</td><td>Option 2</td><td>Display list of all authorised students (alphabetically).</td></tr>
+          <tr><td>4</td><td>Figure 5</td><td>Option 3</td><td>Navigate to the Webcam Menu.</td></tr>
+          <tr><td>5</td><td>Figure 6</td><td>Option 4</td><td>Exit the program.</td></tr>
+          <tr><td>6</td><td>Figure 7</td><td>Webcam - Option 2</td><td>Output is NULL (before detection).</td></tr>
+          <tr><td>7</td><td>Figure 8</td><td>Webcam - Option 3</td><td>Output is NULL (before detection).</td></tr>
+          <tr><td>8</td><td>Figure 9</td><td>Webcam - Option 4</td><td>System prompts user to run detection.</td></tr>
+          <tr><td>9</td><td>Figure 10</td><td>Webcam - Option 1</td><td>Activate webcam and detect faces in real-time.</td></tr>
+          <tr><td>10</td><td>Figure 11</td><td>Webcam - Option 2</td><td>Show list of detected students in detection order.</td></tr>
+          <tr><td>11</td><td>Figure 12</td><td>Webcam - Option 3</td><td>Show list of detected students alphabetically.</td></tr>
+          <tr><td>12</td><td>Figure 13</td><td>Webcam - Option 3 → 2</td><td>Switching between sorted views still displays correctly.</td></tr>
+          <tr><td>13</td><td>Figure 14</td><td>Webcam - Option 4</td><td>Search for a detected student name (exists).</td></tr>
+          <tr><td>14</td><td>Figure 15</td><td>Webcam - Option 4</td><td>Search for a detected student name (not found).</td></tr>
+          <tr><td>15</td><td>Figure 16</td><td>Webcam - Option 5</td><td>Return to the main menu.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-half w3-center">
+        <img src="../images/face_detect.jpg" alt="Face Detection Example" style="width:100%; border-radius:8px;">
+        <p><b>Figure 1:</b> Real-time face detection and recognition using webcam.</p>
+      </div>
+      <div class="w3-half w3-center">
+        <img src="../images/sorted_list.jpg" alt="Sorted Student List" style="width:100%; border-radius:8px;">
+        <p><b>Figure 2:</b> Student list sorted alphabetically and by detection order.</p>
+      </div>
+    </div>
+
+    <h3>🚀 Project Impact</h3>
+    <p>
+      The system strengthens <b>campus security</b> by ensuring only authorised students gain access, 
+      improves <b>efficiency</b> by automating attendance, and provides <b>accurate record-keeping</b> 
+      to minimise errors and impersonation attempts.
+    </p>
+
+    <a href="../index.html" class="w3-button w3-black w3-margin-top">⬅ Back to Resume</a>
+  </div>
+</body>
+</html>
