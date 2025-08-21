@@ -90,7 +90,7 @@ h2 {
 }
 
 /* List Styles */
-.achievements ul, .extracurricular ul {
+.Projects ul, .extracurricular ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
 }
@@ -101,13 +101,13 @@ h2 {
 }
 
 /* Achievements, Skills, and Extracurricular */
-.skills ul, .achievements ul, .extracurricular ul {
+.skills ul, .Projects ul, .extracurricular ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
-.skills li, .achievements li, .extracurricular li {
+.skills li, .Projects li, .extracurricular li {
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 5px;
@@ -149,7 +149,7 @@ h2 {
         height: auto;
     }
 
-    .skills ul, .achievements ul, .extracurricular ul, .languages ul {
+    .skills ul, .Projects ul, .extracurricular ul, .languages ul {
         grid-template-columns: 1fr; /* Stack items in a single column */
     }
 
