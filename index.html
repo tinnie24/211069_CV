@@ -10,6 +10,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <style>
+    /* Navbar Styling */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #cc7a7a; /* Match your theme */
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar a, .dropdown-btn {
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .navbar a:hover, .dropdown:hover .dropdown-btn {
+      background: #b35c5c;
+      border-radius: 6px;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 250px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1001;
+    }
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
@@ -40,12 +91,14 @@
   <div class="container">
     <div class="header">
       <h1>Fatini Zahari</h1>
+    </div>
 
     <div class="profile-container">
       <div class="imgBx">
         <img src="211069.jpg" alt="Fatini Zahari">
       </div>
       <div class="content">
+        
         <!-- Contact Info -->
         <div class="contact-info">
           <div><i class="fa fa-envelope"></i> <strong>Email:</strong> nurfatini248@gmail.com</div>
@@ -151,6 +204,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Footer -->
   <footer>
     <p>Find me on social media.</p>
     <i class="fa fa-facebook"></i>
@@ -158,8 +213,6 @@
     <i class="fa fa-twitter"></i>
     <i class="fa fa-linkedin"></i>
   </footer>
-</body>
-</html>
-  </footer>
+
 </body>
 </html>
