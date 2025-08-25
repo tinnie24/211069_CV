@@ -5,18 +5,185 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fatini Zahari Resume</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
 
   <style>
-    /* Navbar Styling */
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(247, 193, 193);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 50px;
+      color: #cc7a7a;
+      text-transform: uppercase;
+    }
+
+    .profile-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Profile Image */
+    .imgBx {
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .imgBx img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+    }
+
+    /* Section Titles */
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .skills, .languages {
+      margin: 10px 0;
+    }
+
+    /* Skill Bars */
+    .skill-bar {
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      background-color: #4caf50;
+      height: 100%;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+    }
+
+    /* Lists */
+    .projects ul, .extracurricular ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .skills ul, .languages ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .skills ul, .projects ul, .extracurricular ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .skills li, .projects li, .extracurricular li {
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+
+    /* References */
+    .references {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .references div {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+      margin-top: 20px;
+    }
+
+    footer p {
+      color: #f39c12;
+    }
+
+    footer i {
+      margin: 5px;
+      color: #3498db;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    footer i:hover {
+      color: #4CAF50;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .profile-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .imgBx {
+        width: 80px;
+        height: 80px;
+      }
+      .skills ul, .projects ul, .extracurricular ul, .languages ul {
+        grid-template-columns: 1fr;
+      }
+      .references {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Navbar */
     .navbar {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: #cc7a7a; /* Match your theme */
+      background: #cc7a7a;
       padding: 10px 0;
       display: flex;
       justify-content: center;
