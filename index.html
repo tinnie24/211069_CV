@@ -25,16 +25,43 @@
       display: flex;
       justify-content: center;
     }
-    .navbar a {
+    .navbar a, .dropdown-btn {
       color: #fff;
       text-decoration: none;
       padding: 12px 20px;
       font-weight: bold;
       transition: 0.3s;
     }
-    .navbar a:hover {
+    .navbar a:hover, .dropdown:hover .dropdown-btn {
       background: #0073e6;
       border-radius: 6px;
+    }
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 240px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1001;
+    }
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      border-radius: 4px;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     .header {
       text-align: center;
@@ -51,15 +78,28 @@
     <a href="#education"><i class="fa fa-graduation-cap"></i> Education</a>
     <a href="#experience"><i class="fa fa-briefcase"></i> Experience</a>
     <a href="#skills"><i class="fa fa-cogs"></i> Skills</a>
-    <a href="#projects"><i class="fa fa-trophy"></i> Projects</a>
+
+    <!-- Projects Dropdown -->
+    <div class="dropdown">
+      <a href="#projects" class="dropdown-btn"><i class="fa fa-trophy"></i> Projects ▾</a>
+      <div class="dropdown-content">
+        <a href="projects/project1.html">Species Recognition of Blue Aquatic Vision</a>
+        <a href="projects/project2.html">Face Recognition for User Authentication</a>
+        <a href="projects/project3.html">Internship (Industrial Training)</a>
+        <a href="projects/project4.html">Cybersecurity Hackathon (Best Group)</a>
+        <a href="projects/project5.html">Final Year Project (QR Code Subsidy System)</a>
+      </div>
+    </div>
+
     <a href="#extracurricular"><i class="fa fa-users"></i> Extracurricular</a>
     <a href="#references"><i class="fa fa-address-book"></i> References</a>
   </div>
 
+  <!-- Header -->
   <div class="container">
     <div class="header">
       <h1>Fatini Zahari</h1>
-    </div>
+
     <div class="profile-container">
       <div class="imgBx">
         <img src="211069.jpg" alt="Fatini Zahari">
@@ -170,13 +210,15 @@
       </div>
     </div>
   </div>
-
   <footer>
     <p>Find me on social media.</p>
     <i class="fa fa-facebook"></i>
     <i class="fa fa-instagram"></i>
     <i class="fa fa-twitter"></i>
     <i class="fa fa-linkedin"></i>
+  </footer>
+</body>
+</html>
   </footer>
 </body>
 </html>
