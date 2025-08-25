@@ -9,8 +9,53 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+    /* Navigation bar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #004080;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      background: #0073e6;
+      border-radius: 6px;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background: #f4f7fb;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Navigation Panel -->
+  <div class="navbar">
+    <a href="#objective"><i class="fa fa-bullseye"></i> Objective</a>
+    <a href="#education"><i class="fa fa-graduation-cap"></i> Education</a>
+    <a href="#experience"><i class="fa fa-briefcase"></i> Experience</a>
+    <a href="#skills"><i class="fa fa-cogs"></i> Skills</a>
+    <a href="#projects"><i class="fa fa-trophy"></i> Projects</a>
+    <a href="#extracurricular"><i class="fa fa-users"></i> Extracurricular</a>
+    <a href="#references"><i class="fa fa-address-book"></i> References</a>
+  </div>
+
   <div class="container">
     <div class="header">
       <h1>Fatini Zahari</h1>
@@ -28,13 +73,13 @@
         </div>
 
         <!-- Objective -->
-        <h2><i class="fa fa-bullseye"></i> Objective</h2>
+        <h2 id="objective"><i class="fa fa-bullseye"></i> Objective</h2>
         <div class="section">
           <p>I am an extraordinary Final-year student of Bachelor of Computer and Communication Systems Engineering at Universiti Putra Malaysia (UPM), seeking full-time opportunities post-graduation. With strong skills in programming, hardware design, and data analysis, I’m ready to tackle real-world challenges and contribute to cutting-edge innovations.</p>
         </div>
 
         <!-- Education -->
-        <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+        <h2 id="education"><i class="fa fa-graduation-cap"></i> Education</h2>
         <div class="section">
           <p><strong>University Putra Malaysia</strong> - Bachelor of Computer & Communication Systems Engineering</p>
           <p>Dean's list in first semester</p>
@@ -43,7 +88,7 @@
         </div>
 
         <!-- Experience -->
-        <h2><i class="fa fa-briefcase"></i> Experience</h2>
+        <h2 id="experience"><i class="fa fa-briefcase"></i> Experience</h2>
         <div class="section">
           <p><strong>Cleverland Playschool</strong> - Part-Time Teacher (July - October 2023)</p>
           <p>Set up and managed science experiments and hands-on IT activities for children.</p>
@@ -56,7 +101,7 @@
         </div>
 
         <!-- Skills -->
-        <h2><i class="fa fa-cogs"></i> Skills</h2>
+        <h2 id="skills"><i class="fa fa-cogs"></i> Skills</h2>
         <div class="skills">
           <p>Programming</p>
           <div class="skill-bar"><div class="progress" style="width: 70%;">70%</div></div>
@@ -86,20 +131,20 @@
           <div class="skill-bar"><div class="progress" style="width: 50%;">50%</div></div>
         </div>
 
-        <!-- Achievements with links -->
-        <h2><i class="fa fa-trophy"></i> Projects</h2>
+        <!-- Projects -->
+        <h2 id="projects"><i class="fa fa-trophy"></i> Projects</h2>
         <div class="projects">
           <ul>
             <li><a href="projects/project1.html">Species Recognition of Blue Aquatic Vision Project (UPM, 2024)</a></li>
             <li><a href="projects/project2.html">Face Recognition for User Authentication (UPM, 2024)</a></li>
-            <li><a href="projects/project3.html">Internship(Industrial Training)</a></li>
+            <li><a href="projects/project3.html">Internship (Industrial Training)</a></li>
             <li><a href="projects/project4.html">Best Group in Cybersecurity Hackathon at Engineering Society Project</a></li>
-            <li><a href="projects/project5.html">Final Year project "Citizen Verification System Access Controlled for Subsidized items in Malaysia using QR Code"</a></li>
+            <li><a href="projects/project5.html">Final Year Project "Citizen Verification System Access Controlled for Subsidized Items in Malaysia using QR Code"</a></li>
           </ul>
         </div>
 
         <!-- Extracurricular -->
-        <h2><i class="fa fa-users"></i> Extracurricular Activities</h2>
+        <h2 id="extracurricular"><i class="fa fa-users"></i> Extracurricular Activities</h2>
         <div class="extracurricular">
           <ul>
             <li>Mentor, Science Computer & Peer Assistant Learning (PAL) Physics - Selangor Matriculation (2019-2021)</li>
@@ -109,7 +154,7 @@
         </div>
 
         <!-- References -->
-        <h2><i class="fa fa-address-book"></i> References</h2>
+        <h2 id="references"><i class="fa fa-address-book"></i> References</h2>
         <div class="references">
           <div>
             <p><strong>Muhammad Ajwad Fitri Bin Md Halim</strong></p>
