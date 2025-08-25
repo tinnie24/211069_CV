@@ -8,6 +8,94 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+      background-color: #f4f7fb;
+    }
+    /* Project Navigation */
+    .proj-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #004080;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+    }
+    .proj-navbar a, .dropdown-btn {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .proj-navbar a:hover, .dropdown:hover .dropdown-btn {
+      background: #0073e6;
+      border-radius: 6px;
+    }
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1001;
+    }
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      border-radius: 4px;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #004080, #0073e6);
+      color: white;
+      border-radius: 0 0 12px 12px;
+    }
+    .hero h1 {
+      margin: 0;
+    }
+    .section {
+      padding: 30px;
+      background: white;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+    }
+    .section h2 {
+      color: #004080;
+      border-left: 5px solid #0073e6;
+      padding-left: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+  <style>
+    body {
       background-color: #f4f7fb;
       font-family: "Segoe UI", sans-serif;
       color: #333;
@@ -48,6 +136,11 @@
   </style>
 </head>
 <body>
+
+  <!-- Sub-Navigation for Project -->
+  <div class="proj-navbar">
+    <a href="../index.html"><i class="fa fa-home"></i> Back to Resume</a>
+  </div>
   <div class="w3-content w3-padding">
 
     <!-- HERO HEADER -->
